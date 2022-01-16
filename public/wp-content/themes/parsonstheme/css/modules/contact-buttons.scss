@@ -1,0 +1,25 @@
+.contact-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    @include atSmallTablet {
+        display: none;
+    }
+}
+
+.button-container {
+    flex-basis: 33%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: $greenBtn;
+}
+
+.contact-btn {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+}
+

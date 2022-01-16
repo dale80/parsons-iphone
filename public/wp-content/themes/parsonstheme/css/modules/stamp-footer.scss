@@ -1,0 +1,36 @@
+.stamp-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+
+    &__spacer {
+        flex-basis: 30%;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        @include atMedium {
+            flex-basis: 45%;
+        }
+    }
+
+    &__stamp {
+        flex-basis: 40%;
+        flex-wrap: nowrap;
+        flex-grow: 0;
+        flex-shrink: 0;
+        text-align: center;
+
+        @include atMedium {
+            flex-basis: 10%;
+        }
+    }
+
+    &__image {
+        height: 90px;
+        width: 60px;
+    }
+}

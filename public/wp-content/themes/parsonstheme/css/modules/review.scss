@@ -1,0 +1,82 @@
+.review {
+    background-color: $lightOrange;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include atMedium {
+        flex-direction: row;
+    }
+}
+
+.review-card {
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include atMedium {
+        flex-basis: 33%;
+    }
+}
+
+.photo-container {
+    width: 150px;
+    height: 200px;
+    background-color: whitesmoke;
+    box-shadow: 6px 6px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation-name: fadeIn, rotate;
+    animation-duration: 4s, 4s;
+    animation-fill-mode: forwards;    
+}
+
+.review-img {
+    width: 140px;
+    height: auto;
+    margin: 5px;
+    
+}
+
+.review-name {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.quote-container {
+    height: 200px;
+}
+
+.review-text {
+    font-size: 20px;
+    margin: 5px 5px 5px 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-14deg);
+    }
+}

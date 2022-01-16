@@ -1,0 +1,44 @@
+$primary: #fe883e;
+$secondary: #808080;
+$greenBtn: #32cd32;
+$beige: #FAF0CA;
+$mainYellow: #F4D35E;
+$mainBlue: #0D3B66;
+$lightOrange: #EE964B35;
+$darkOrange: #F95748;
+$primaryFade: #fe883e50;
+$secondaryFade: #80808065;
+$blackFade: #00000050;
+$blueFade: #0d3b6625;
+$blueFade2: #0d3b6615;
+
+
+@mixin atTiny {
+    @media (min-width: 364px) {
+      @content;
+    }
+}
+
+@mixin atSmall {
+    @media (min-width: 530px) {
+      @content;
+    }
+  }
+
+@mixin atSmallTablet {
+    @media (min-width: 542px) {
+      @content;
+    }
+  }
+  
+  @mixin atSmallMedium {
+    @media (min-width: 767px) {
+      @content;
+    }
+  }
+  
+  @mixin atMedium {
+    @media (min-width: 960px) {
+      @content;
+    }
+  }
